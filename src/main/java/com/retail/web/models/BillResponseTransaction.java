@@ -2,21 +2,21 @@ package com.retail.web.models;
 
 public class BillResponseTransaction extends ResponseTransaction {
 
-    private double totalDiscount;
+    private double totalAmountAfterDiscount;
 
     BillResponseTransaction() {
     }
 
     BillResponseTransaction(double totalDiscount) {
-        this.totalDiscount = totalDiscount;
+        this.totalAmountAfterDiscount = totalDiscount;
     }
 
-    public double getTotalDiscount() {
-        return totalDiscount;
+    public double getTotalAmountAfterDiscount() {
+        return totalAmountAfterDiscount;
     }
 
-    public void setTotalDiscount(long totalDiscount) {
-        this.totalDiscount = totalDiscount;
+    public void setTotalAmountAfterDiscount(long totalAmountAfterDiscount) {
+        this.totalAmountAfterDiscount = totalAmountAfterDiscount;
     }
 
     public static BillResponseTransaction buildSuccessResponse(double totalDiscount) {
