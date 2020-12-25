@@ -6,6 +6,8 @@ import com.retail.trx.dao.api.UserDAO;
 import com.retail.trx.models.User;
 import com.retail.trx.models.enums.ItemTypeEnum;
 import com.retail.trx.services.api.DiscountService;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,8 @@ import java.util.List;
 
 @Service
 public class DiscountServiceImpl implements DiscountService {
+    private static final Logger logger = LogManager.getLogger(DiscountServiceImpl.class);
+
     @Autowired
     private UserDAO userDAO;
 

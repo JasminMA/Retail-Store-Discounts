@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "3c3c8ada-2d57-495f-bc06-b326e3ab8b7a",
+		"name": "Retail discount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDiscount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"billItemsType\":\"ELECTRONICS\",\r\n//   \"billItemsType\":\"GROCERIES\",\r\n  \"totalAmount\": 30,\r\n  \"userNationalID\": \"1234567897\",\r\n  \"requestId\": \"30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discount/getdiscount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discount",
+						"getdiscount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
